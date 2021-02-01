@@ -30,4 +30,7 @@ sh -c "cd verifiers ; npm i"
 node verifiers/scripts/create_wallet.js
 node verifiers/scripts/generate_dockerfile.js mainnet wallet.enc.json wallet_password.secret
 
-echo 'Setup complete, start the service using "docker-compose up"'
+echo ''
+echo "Setup complete, start the service using the following command"
+echo ''
+echo "cd ${DATA_DIR} ; docker-compose up"
